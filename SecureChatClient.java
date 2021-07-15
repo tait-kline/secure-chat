@@ -111,7 +111,6 @@ public class SecureChatClient extends JFrame implements Runnable, ActionListener
                         {
                             byte [] closingMSG = cipher.encode("CLIENT CLOSING");
                             myWriter.writeObject(closingMSG); myWriter.flush();
-                            System.out.println("Sending CLIENT CLOSING msg to server");
                             System.exit(0);
                         }
                         catch (Exception ex)
